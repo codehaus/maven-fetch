@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<document>
+
+  <properties>
+    <title>Examples</title>
+    <author email="bwalding@apache.org">Ben Walding</author>
+  </properties>
+
+  <body>
+	<section name="Overview">
+		<p>
+			The best bet for the time being is to check the FetchTest to
+			see how to use the Fetch module
+		</p>	
+	</section>
+
+    <section name="Example 1">
+      <p>
+		Create a FetchRequest
+	  </p>
+
+	  <source>
+		FetchRequest dreq = new FetchRequest("http://www.ibiblio.org/maven/commons-digester/jars/commons-digester-1.4.1.jar");
+      </source>
+    </section>
+
+  </body>
+</document>
