@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<document>
+
+  <properties>
+    <title>Features</title>
+    <author email="bwalding@apache.org">Ben Walding</author>
+  </properties>
+
+  <body>
+
+    <section name="Features">
+      <p>
+		<ul>
+			<li>It is a lightweight compatriot for commons-vfs.</li>
+			<li>Any requests to make this application download multiples files will be summarily ignored.</li>
+			<li>As will connection sharing between requests?  maybe...</li>
+			
+			<li>The file is downloaded to a temporary location</li>
+		</ul>
+	  </p>
+    </section>
+
+  </body>
+</document>

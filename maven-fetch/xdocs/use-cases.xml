@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<document>
+
+  <properties>
+    <title>Use Cases</title>
+    <author email="bwalding@apache.org">Ben Walding</author>
+  </properties>
+
+  <body>
+
+    <section name="Mandatory">
+		<subsection name="Fetch If Newer">
+			<p>The ability to fetch a resource only if the source resource is newer</p>
+		</subsection>
+ 	</section>
+
+  </body>
+</document>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<document>
+
+  <properties>
+    <title>Downloads</title>
+    <author email="bwalding@apache.org">Ben Walding</author>
+  </properties>
+
+  <body>
+
+    <section name="SNAPSHOTS">
+      <p>
+         <a href="http://www.ibiblio.org/maven/maven-new/jars/maven-fetch-SNAPSHOT.jar">fetch-SNAPSHOT.jar</a>
+	  </p>
+    </section>
+
+  </body>
+</document>
