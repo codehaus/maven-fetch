@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<project>
+  <pomVersion>3</pomVersion>
+  <name>Fetch</name>
+
+  <id>maven-fetch</id>
+  <groupId>maven-new</groupId>
+  
+  <currentVersion>1.0-SNAPSHOT</currentVersion>
+  <organization>
+    <name></name>
+    <url></url>
+  </organization>
+  <inceptionYear>2003</inceptionYear>
+  <package>org.apache.maven.fetch</package>
+
+  <shortDescription>Lightweight resource fetcher</shortDescription>
+
+  <description>
+    Fetch is an ultra-lightweight dependency downloader
+  </description>
+
+  <url>http://projects.walding.com/fetch/</url>
+  <siteAddress>atlas.walding.com</siteAddress>
+  <siteDirectory>
+    /var/www/projects.walding.com/html/fetch
+  </siteDirectory>
+  <distributionDirectory>
+  </distributionDirectory>
+
+  <repository>
+    <connection>
+      scm:cvs:pserver:anonymous@cvs.apache.org:/home/cvspublic:maven-new/fetch
+    </connection>
+    <url>
+      http://cvs.apache.org/viewcvs.cgi/maven-new/fetch/
+    </url>
+  </repository>
+  
+  <developers>
+    <developer>
+      <name>Ben Walding</name>
+      <id>bwalding</id>
+      <email>bwalding@apache.org</email>
+      <organization></organization>
+    </developer>
+  </developers>
+
+  <dependencies>
+    <dependency>
+      <id>log4j</id>
+      <version>1.2.7</version>
+    </dependency>
+    
+    <dependency>
+        <id>jetty</id>
+        <version>4.2.9</version>
+        <!-- test only -->
+    </dependency>
+
+    <dependency>
+        <id>servletapi</id>
+        <version>2.3</version>
+        <!-- test only -->
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <sourceDirectory>src/main/java</sourceDirectory>
+
+    <unitTestSourceDirectory>src/test/java</unitTestSourceDirectory>
+    <integrationUnitTestSourceDirectory/>
+
+    <aspectSourceDirectory/>
+
+    <!-- Unit test cases -->
+    <unitTest>
+      <includes>
+        <include>**/*Test.java</include>
+      </includes>
+
+	  <resources>
+        <resource>
+          <directory>${basedir}/src/test/java</directory>
+          <includes>
+            <include>**/*</include>
+          </includes>
+          <excludes>
+            <exclude>**/*.java</exclude>
+          </excludes>
+        </resource>        
+      </resources>
+    </unitTest>
+              
+    <!-- J A R  R E S O U R C E S -->
+    <!-- Resources that are packaged up inside the JAR file -->
+    <resources>
+    	<resource>    	
+				<directory>src/java</directory>
+				<includes><include>**/*</include></includes>
+				<excludes><exclude>**/*.java</exclude></excludes>
+		</resource>
+		<resource>    	
+				<directory>src/resources</directory>
+				<includes><include>velocity/**/*</include></includes>
+		</resource>
+	</resources>
+	
+	 
+    
+  </build>
+</project>
+
