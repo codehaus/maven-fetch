@@ -1,0 +1,16 @@
+<project default="java:jar"
+  xmlns:j="jelly:core"
+  xmlns:doc="doc"
+  xmlns:m="maven"
+  xmlns:reactor="reactor"
+  xmlns:deploy="deploy">
+      
+    <postGoal name="xdoc:register-reports">
+    	<attainGoal name="maven-linkcheck-plugin:deregister"/>
+	</postGoal>  
+
+	<!-- Eclipse gets all annoyed if you don't do this -->
+	<postGoal name="clean">
+		<mkdir dir="target/test-classes"/>
+	</postGoal>    
+</project>

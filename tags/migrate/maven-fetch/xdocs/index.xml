@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<document>
+
+  <properties>
+    <title>Downloads</title>
+    <author email="bwalding@apache.org">Ben Walding</author>
+  </properties>
+
+  <body>
+
+    <section name="Downloads">
+      <p>
+      	What is Fetch?
+	  </p>
+	  <p>
+        Fetch is a simple, lightweight package for downloading single resources.
+        It does not try to be a commons-httpclient, a commons-vfs or any of the other
+        larger, more complete utilities for interacting with remote servers.
+	  </p>
+	  <p>
+		It's purpose is to fill the niche for Maven bootstraps such that only
+        a minimum of dependencies are required - and that those dependencies
+        are lightweight and reliable.
+      </p>
+	</section>
+
+  </body>
+</document>
